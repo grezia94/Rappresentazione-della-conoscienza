@@ -1,0 +1,14 @@
+<aiml version="1.0">
+    <category>
+    <!-- ricarica i file/set .aiml -->
+        <pattern>LOAD AIML</pattern>
+        <template>
+        Okay.
+            <!-- Carica un file p un set di file AIML -->
+            <!-- file .aiml -->
+            <think>
+            <learnf>data/*.aiml</learnf>
+            </think>
+        </template>
+    </category>
+</aiml>

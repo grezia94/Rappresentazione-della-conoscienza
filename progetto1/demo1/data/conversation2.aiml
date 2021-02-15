@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<meta name="language" content="it"/>
+
+<category>
+      <pattern>MY PET NAME IS *</pattern>
+      <template>
+        <random>
+            <li> <set name="petname"><star/></set> is a cute pet name.</li>
+            <li> <set name="petname"><star/></set> is such a lovely name!</li>
+            <li> <set name="petname"><star/></set></li>
+        </random>
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY PET NAME</pattern>
+  <template>
+     Your pet name is <get name="petname"/>.
+  </template>
+</category>
+
+<category>
+   <pattern>SCHOOL</pattern>
+   <template>
+   <random>
+            <li>School is an important institution in a child's life.</li>
+            <li>School is a place where kids study. </li>
+            <li>School is an important institution for childrens.</li>
+            <li>School is a place where we gain knowledge.</li>
+        </random>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>QUIT</pattern>
+   <template>
+      Goodbye! :)
+   </template>
+</category>
+
+<category>
+<pattern>info</pattern>
+<template> <link> 
+<text> google.it </text>
+<url>https://www.google.it</url>
+</link>
+</template>
+</category>
+
+</aiml>

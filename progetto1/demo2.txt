@@ -1,0 +1,4 @@
+Cartella di sistema
+cd ChatterPietro
+myPietro\Scripts\activate
+--> chat.py (file python da eseguire)
